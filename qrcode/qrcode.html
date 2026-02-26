@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QRCode</title>
+    <link rel="stylesheet" href="qrcode.css" />
+    <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script defer src="qrcode.js"></script>
+  </head>
+  <body>
+    <div class="container" id="container">
+      <div class="heading">
+        <h1>QR Code Generator</h1>
+      </div>
+
+      <div class="url">
+        <input
+          type="text"
+          name=""
+          id="url"
+          placeholder="Enter URL"
+          autofocus
+          required
+        />
+        <button id="qrcode">Generate QR Code</button>
+      </div>
+      <div class="image">
+        <img src="" id="qrimage" />
+      </div>
+      <div class="download">
+        <button id="download">Download</button>
+      </div>
+    </div>
+  </body>
+</html>
